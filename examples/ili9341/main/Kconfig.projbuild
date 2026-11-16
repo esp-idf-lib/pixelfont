@@ -1,0 +1,24 @@
+menu "Example configuration"
+
+config EXAMPLE_LCD_PIN_PCLK
+    int "SPI clock pin"
+    default 12
+
+config EXAMPLE_LCD_PIN_MOSI
+    int "SPI data pin"
+    default 11
+
+config EXAMPLE_LCD_PIN_CS
+    int "Chip select pin"
+    default 10
+
+config EXAMPLE_LCD_PIN_DC
+    int "Data/command pin"
+    default 13
+
+config EXAMPLE_LCD_PIN_RST
+    int "Reset pin, -1 when the display has no reset line"
+    range -1 48
+    default 14
+
+endmenu
