@@ -1,0 +1,30 @@
+menu "Pixel fonts"
+
+    config PIXELFONT_FONTS
+        string "Bundled fonts"
+        default "terminus_8x16,terminus_12x24"
+        help
+            The fonts to compile into the application, comma separated. The
+            names are the file names in the fonts/ directory without the
+            "font_" prefix and the ".c" suffix, so "terminus_8x16" means
+            fonts/font_terminus_8x16.c.
+
+            Generate a font from a BDF or PSF file with tools/pixelfont.py and
+            put the result into fonts/, then add its name here.
+
+    choice PIXELFONT_DEFAULT_FONT
+        prompt "Default font"
+        default PIXELFONT_DEFAULT_TERMINUS_8X16
+        help
+            The font that the application uses by default, available as
+            PIXELFONT_FONT_DEFAULT.
+
+        config PIXELFONT_DEFAULT_TERMINUS_8X16
+            bool "Terminus 8x16"
+
+        config PIXELFONT_DEFAULT_TERMINUS_12X24
+            bool "Terminus 12x24"
+
+    endchoice
+
+endmenu

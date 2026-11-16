@@ -1,0 +1,18 @@
+version: "0.1.0"
+description: Bitmap font renderer for monochrome and colour displays
+license: MIT
+maintainers:
+  - Ruslan V. Uss (@UncleRus) <unclerus@gmail.com>
+url: https://github.com/esp-idf-lib/core
+repository: https://github.com/esp-idf-lib/pixelfont
+documentation: https://esp-idf-lib.github.io/pixelfont/
+issues: https://github.com/esp-idf-lib/pixelfont/issues
+discussion: https://github.com/esp-idf-lib/core/discussions
+dependencies:
+  idf: ">=5.0"
+files:
+  exclude:
+    - docs/**/*
+    - examples/**/*
+    - tools/**/*
+    - "**/*.py"
