@@ -1,0 +1,4 @@
+dependencies:
+  espressif/esp_lcd_ili9341: "^2.1.0"
+  pixelfont:
+    override_path: "../../../"

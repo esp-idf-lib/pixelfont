@@ -1,0 +1,5 @@
+# the font lives in the file system image of the storage partition
+CONFIG_PARTITION_TABLE_CUSTOM=y
+CONFIG_PARTITION_TABLE_CUSTOM_FILENAME="partitions.csv"
+
+CONFIG_ESPTOOLPY_FLASHSIZE_4MB=y
