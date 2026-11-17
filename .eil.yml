@@ -1,7 +1,7 @@
 ---
 name: pixelfont
 description: Bitmap font renderer for monochrome and colour displays
-version: 0.1.0
+version: 0.1.1
 groups:
   - display
 code_owners: UncleRus
