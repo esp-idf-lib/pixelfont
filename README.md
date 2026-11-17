@@ -313,7 +313,7 @@ has a README with the details of its wiring.
 ## Installation
 
 ```sh
-idf.py add-dependency "esp-idf-lib/pixelfont^0.1.0"
+idf.py add-dependency "esp-idf-lib/pixelfont"
 ```
 
 ## Support
